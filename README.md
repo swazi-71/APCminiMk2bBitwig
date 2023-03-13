@@ -9,6 +9,6 @@ I didn't write more than a couple lines of this, t'was mostly cutting & pasting,
 
 Known Issues :
 
-Crashes if one uses anything other than the classic colour scheme.<\n>
-Crashes if one tries to use a Group Track.<\n>
-The Session View can corrupt the Play View after a while.<\n>
+Crashes if one uses anything other than the classic colour scheme.<br>
+Crashes if one tries to use a Group Track.<br>
+The Session View can corrupt the Play View after a while.<br>
