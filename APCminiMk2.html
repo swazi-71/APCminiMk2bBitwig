@@ -1,42 +1,1877 @@
-<html>
-	<head>
-		<title>Bitwig Studio | Akai APCmini Mk2</title>
-		<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<meta http-equiv="Content-Language" content="en"/>
-		<meta name="description" content="Using an Akai APCmini Mk2 controller in Bitwig Studio."/>
-		<meta name="author" content="JÃ¼rgen MoÃŸgraber"/>
-		<style>
-			BODY
-			{
-				max-width: 800px;
-			}
-			BODY, TABLE, P, LI
-			{
-				font-family: Arial;
-				font-size: 14pt;
-			}
-			LI, TD
-			{
-				padding-bottom: 4px;
-			}
-			TD:first-child
-			{
-				font-weight: bold;
-				width: 200px;
-			}
-			.small
-			{
-				font-size: 10pt;
-			}
-		</style>
-	</head>
-	<body>
-	
-		<h1>Bitwig Studio | Akai APCmini Mk2</h1>
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns="http://www.w3.org/TR/REC-html40">
 
-		<p>
-		Support script for the Akai APCmini Mk2 controller.
-		</p>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 15">
+<meta name=Originator content="Microsoft Word 15">
+<link rel=File-List href="APCminiMk2_files/filelist.xml">
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>T.'swazi' Wallace</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>T.'swazi' Wallace</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>37</o:TotalTime>
+  <o:Created>2023-03-15T13:41:00Z</o:Created>
+  <o:LastSaved>2023-03-15T13:41:00Z</o:LastSaved>
+  <o:Pages>3</o:Pages>
+  <o:Words>1010</o:Words>
+  <o:Characters>5757</o:Characters>
+  <o:Lines>47</o:Lines>
+  <o:Paragraphs>13</o:Paragraphs>
+  <o:CharactersWithSpaces>6754</o:CharactersWithSpaces>
+  <o:Version>16.00</o:Version>
+ </o:DocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]-->
+<link rel=themeData href="APCminiMk2_files/themedata.thmx">
+<link rel=colorSchemeMapping href="APCminiMk2_files/colorschememapping.xml">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:PunctuationKerning/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-AU</w:LidThemeOther>
+  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:SplitPgBreakAndParaMark/>
+   <w:EnableOpenTypeKerning/>
+   <w:DontFlipMirrorIndents/>
+   <w:OverrideTableStyleHps/>
+  </w:Compatibility>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
+  DefSemiHidden="false" DefQFormat="false" DefPriority="99"
+  LatentStyleCount="376">
+  <w:LsdException Locked="false" Priority="0" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 9"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 1"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 2"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 3"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 4"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 5"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 6"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 7"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 8"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footnote text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="header"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footer"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index heading"/>
+  <w:LsdException Locked="false" Priority="35" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="table of figures"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="envelope address"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="envelope return"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footnote reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="line number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="page number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="endnote reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="endnote text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="table of authorities"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="macro"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toa heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 5"/>
+  <w:LsdException Locked="false" Priority="10" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Closing"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Signature"/>
+  <w:LsdException Locked="false" Priority="1" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Message Header"/>
+  <w:LsdException Locked="false" Priority="11" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Salutation"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Date"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text First Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text First Indent 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Note Heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Block Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Hyperlink"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="FollowedHyperlink"/>
+  <w:LsdException Locked="false" Priority="22" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" Priority="20" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Document Map"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Plain Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="E-mail Signature"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Top of Form"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Bottom of Form"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal (Web)"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Acronym"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Address"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Cite"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Code"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Definition"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Keyboard"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Preformatted"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Sample"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Typewriter"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Variable"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal Table"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation subject"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="No List"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Contemporary"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Elegant"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Professional"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Subtle 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Subtle 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Balloon Text"/>
+  <w:LsdException Locked="false" Priority="39" Name="Table Grid"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Theme"/>
+  <w:LsdException Locked="false" SemiHidden="true" Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" QFormat="true"
+   Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" QFormat="true"
+   Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" QFormat="true"
+   Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" QFormat="true"
+   Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" QFormat="true"
+   Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" QFormat="true"
+   Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="TOC Heading"/>
+  <w:LsdException Locked="false" Priority="41" Name="Plain Table 1"/>
+  <w:LsdException Locked="false" Priority="42" Name="Plain Table 2"/>
+  <w:LsdException Locked="false" Priority="43" Name="Plain Table 3"/>
+  <w:LsdException Locked="false" Priority="44" Name="Plain Table 4"/>
+  <w:LsdException Locked="false" Priority="45" Name="Plain Table 5"/>
+  <w:LsdException Locked="false" Priority="40" Name="Grid Table Light"/>
+  <w:LsdException Locked="false" Priority="46" Name="Grid Table 1 Light"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark"/>
+  <w:LsdException Locked="false" Priority="51" Name="Grid Table 6 Colorful"/>
+  <w:LsdException Locked="false" Priority="52" Name="Grid Table 7 Colorful"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 1"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 1"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 1"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 2"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 2"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 2"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 3"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 3"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 3"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 4"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 4"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 5"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 5"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 5"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 6"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 6"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 6"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="46" Name="List Table 1 Light"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark"/>
+  <w:LsdException Locked="false" Priority="51" Name="List Table 6 Colorful"/>
+  <w:LsdException Locked="false" Priority="52" Name="List Table 7 Colorful"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 1"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 1"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 1"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 2"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 2"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 2"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 3"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 3"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 3"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 4"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 4"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 5"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 5"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 5"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 6"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 6"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 6"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Mention"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Smart Hyperlink"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Hashtag"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Unresolved Mention"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Smart Link"/>
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-536869121 1107305727 33554432 0 415 0;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-469750017 -1073732485 9 0 511 0;}
+@font-face
+	{font-family:LMRoman12-Bold;
+	panose-1:0 0 0 0 0 0 0 0 0 0;
+	mso-font-alt:Calibri;
+	mso-font-charset:0;
+	mso-generic-font-family:auto;
+	mso-font-format:other;
+	mso-font-pitch:auto;
+	mso-font-signature:3 0 0 0 1 0;}
+@font-face
+	{font-family:LMRoman10-Regular;
+	panose-1:0 0 0 0 0 0 0 0 0 0;
+	mso-font-alt:Calibri;
+	mso-font-charset:0;
+	mso-generic-font-family:auto;
+	mso-font-format:other;
+	mso-font-pitch:auto;
+	mso-font-signature:3 0 0 0 1 0;}
+@font-face
+	{font-family:LMRoman10-Italic;
+	panose-1:0 0 0 0 0 0 0 0 0 0;
+	mso-font-alt:Calibri;
+	mso-font-charset:0;
+	mso-generic-font-family:auto;
+	mso-font-format:other;
+	mso-font-pitch:auto;
+	mso-font-signature:3 0 0 0 1 0;}
+@font-face
+	{font-family:LMRoman10-Bold;
+	panose-1:0 0 0 0 0 0 0 0 0 0;
+	mso-font-alt:Calibri;
+	mso-font-charset:0;
+	mso-generic-font-family:auto;
+	mso-font-format:other;
+	mso-font-pitch:auto;
+	mso-font-signature:3 0 0 0 1 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	line-height:107%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-fareast-language:EN-US;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:36.0pt;
+	mso-add-space:auto;
+	line-height:107%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-fareast-language:EN-US;}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-type:export-only;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	mso-add-space:auto;
+	line-height:107%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-fareast-language:EN-US;}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-type:export-only;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	mso-add-space:auto;
+	line-height:107%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-fareast-language:EN-US;}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-type:export-only;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:36.0pt;
+	mso-add-space:auto;
+	line-height:107%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-fareast-language:EN-US;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-fareast-language:EN-US;}
+.MsoPapDefault
+	{mso-style-type:export-only;
+	margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-paper-source:0;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:167450476;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1458775918 -1300587110 201916419 201916421 201916417 201916419 201916421 201916417 201916419 201916421;}
+@list l0:level1
+	{mso-level-start-at:0;
+	mso-level-number-format:bullet;
+	mso-level-text:-;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:LMRoman10-Regular;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-bidi-font-family:LMRoman10-Regular;}
+@list l0:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:"Courier New";}
+@list l0:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Wingdings;}
+@list l0:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l0:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:"Courier New";}
+@list l0:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Wingdings;}
+@list l0:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l0:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:"Courier New";}
+@list l0:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Wingdings;}
+@list l1
+	{mso-list-id:1378235225;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-777229988 869430466 201916419 201916421 201916417 201916419 201916421 201916417 201916419 201916421;}
+@list l1:level1
+	{mso-level-start-at:0;
+	mso-level-number-format:bullet;
+	mso-level-text:-;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:LMRoman10-Regular;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-bidi-font-family:LMRoman10-Regular;}
+@list l1:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:"Courier New";}
+@list l1:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Wingdings;}
+@list l1:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l1:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:"Courier New";}
+@list l1:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Wingdings;}
+@list l1:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l1:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:"Courier New";}
+@list l1:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Wingdings;}
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin-top:0cm;
+	mso-para-margin-right:0cm;
+	mso-para-margin-bottom:8.0pt;
+	mso-para-margin-left:0cm;
+	line-height:107%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-fareast-language:EN-US;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1026"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
 
-	</body>
+<body lang=EN-AU style='tab-interval:36.0pt;word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><b><span style='font-size:14.5pt;font-family:LMRoman12-Bold;
+mso-bidi-font-family:LMRoman12-Bold'>Akai Professional <span class=SpellE>APCmini</span>
+Mk2<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>Support script for <span class=SpellE>Akais</span>’
+<span class=SpellE>APCmini</span> Mk2 controller. You can control track
+parameters, devices and session view.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><b><span style='font-size:12.0pt;font-family:LMRoman12-Bold;
+mso-bidi-font-family:LMRoman12-Bold'>Installation<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>If you added the controller manually,
+select the MIDI input without an extension (not: “EXT, DAW”) and<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>the USB connection (there should be
+only one option for that).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><b><span style='font-size:12.0pt;font-family:LMRoman12-Bold;
+mso-bidi-font-family:LMRoman12-Bold'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><b><span style='font-size:12.0pt;font-family:LMRoman12-Bold;
+mso-bidi-font-family:LMRoman12-Bold'>Features<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>For the basic usage see the <span
+class=SpellE>APCmini</span> Mk2 manual. <i>To be honest, I don’t know how much
+of that will <span class=GramE>actually achieve</span> anything…</i><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>The differences are as follows:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><s><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>• </span></s><span class=SpellE><i><s><span
+style='font-size:10.0pt;font-family:LMRoman10-Italic;mso-bidi-font-family:LMRoman10-Italic'>Shift+Device</span></s></i></span><i><s><span
+style='font-size:10.0pt;font-family:LMRoman10-Italic;mso-bidi-font-family:LMRoman10-Italic'>
+</span></s></i><s><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>- Pressing multiple times toggles
+between Device and Macro editing.<o:p></o:p></span></s></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><s><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>• </span></s><span class=SpellE><i><s><span
+style='font-size:10.0pt;font-family:LMRoman10-Italic;mso-bidi-font-family:LMRoman10-Italic'>Shift+Scene</span></s></i></span><i><s><span
+style='font-size:10.0pt;font-family:LMRoman10-Italic;mso-bidi-font-family:LMRoman10-Italic'>
+button 6 </span></s></i><s><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>- Toggles between editing of normal and
+effect tracks.<o:p></o:p></span></s></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><s><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>• </span></s><span class=SpellE><i><s><span
+style='font-size:10.0pt;font-family:LMRoman10-Italic;mso-bidi-font-family:LMRoman10-Italic'>Shift+Scene</span></s></i></span><i><s><span
+style='font-size:10.0pt;font-family:LMRoman10-Italic;mso-bidi-font-family:LMRoman10-Italic'>
+button 7 </span></s></i><s><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>- Toggles VST window.<o:p></o:p></span></s></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><s><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'><o:p><span style='text-decoration:none'>&nbsp;</span></o:p></span></s></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>But there is MUCH more! If you keep the
+</span><span style='font-size:10.0pt;font-family:LMRoman10-Italic;mso-bidi-font-family:
+LMRoman10-Italic'>Shift<i> </i></span><span style='font-size:10.0pt;font-family:
+LMRoman10-Regular;mso-bidi-font-family:LMRoman10-Regular'>button pressed the
+grid reveals more options:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>• </span><b><span style='font-size:
+10.0pt;font-family:LMRoman10-Bold;mso-bidi-font-family:LMRoman10-Bold'>Buttons
+in left upper corner </span></b><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>- These five buttons change the main
+modes of the script<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><b><span style='font-size:10.0pt;font-family:LMRoman10-Bold;
+mso-bidi-font-family:LMRoman10-Bold'>– </span></b><span style='font-size:10.0pt;
+font-family:LMRoman10-Regular;mso-bidi-font-family:LMRoman10-Regular'>1st
+button: Session mode (the basic functionality)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><b><span style='font-size:10.0pt;font-family:LMRoman10-Bold;
+mso-bidi-font-family:LMRoman10-Bold'>– </span></b><span style='font-size:10.0pt;
+font-family:LMRoman10-Regular;mso-bidi-font-family:LMRoman10-Regular'>2nd
+button: Play mode, allows you to play notes in different scales<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><b><span style='font-size:10.0pt;font-family:LMRoman10-Bold;
+mso-bidi-font-family:LMRoman10-Bold'>– </span></b><span style='font-size:10.0pt;
+font-family:LMRoman10-Regular;mso-bidi-font-family:LMRoman10-Regular'>3rd button:
+Drum sequencer (as known from the Push) - Requires a selected midi clip<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><b><s><span style='font-size:10.0pt;font-family:LMRoman10-Bold;
+mso-bidi-font-family:LMRoman10-Bold'>– </span></s></b><s><span
+style='font-size:10.0pt;font-family:LMRoman10-Regular;mso-bidi-font-family:
+LMRoman10-Regular'>4th button: Note sequencer (as known from the Push) -
+Requires a selected midi clip<o:p></o:p></span></s></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><b><s><span style='font-size:10.0pt;font-family:LMRoman10-Bold;
+mso-bidi-font-family:LMRoman10-Bold'>– </span></s></b><s><span
+style='font-size:10.0pt;font-family:LMRoman10-Regular;mso-bidi-font-family:
+LMRoman10-Regular'>5th button: Raindrop sequencer - Requires a selected midi
+clip<o:p></o:p></span></s></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><s><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'><o:p><span style='text-decoration:none'>&nbsp;</span></o:p></span></s></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>• <b>Buttons on the bottom</b> - These
+buttons form a 1 octave keyboard in green. Press one of the keys to select the
+base note of the current scale. Used for </span><span style='font-size:10.0pt;
+font-family:LMRoman10-Italic;mso-bidi-font-family:LMRoman10-Italic'>Play</span><span
+style='font-size:10.0pt;font-family:LMRoman10-Regular;mso-bidi-font-family:
+LMRoman10-Regular'>, </span><span style='font-size:10.0pt;font-family:LMRoman10-Italic;
+mso-bidi-font-family:LMRoman10-Italic'>Rain </span><s><span style='font-size:
+10.0pt;font-family:LMRoman10-Regular;mso-bidi-font-family:LMRoman10-Regular'>and
+</span></s><s><span style='font-size:10.0pt;font-family:LMRoman10-Italic;
+mso-bidi-font-family:LMRoman10-Italic'>Note<i> </i>Sequencer</span></s><i><span
+style='font-size:10.0pt;font-family:LMRoman10-Italic;mso-bidi-font-family:LMRoman10-Italic'>
+</span></i><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>mode. <i>Current root note highlighted
+red.</i><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>• </span><b><span style='font-size:
+10.0pt;font-family:LMRoman10-Bold;mso-bidi-font-family:LMRoman10-Bold'>8th
+column buttons </span></b><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>(from top to bottom) - Transport
+control<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><b><span style='font-size:10.0pt;font-family:LMRoman10-Bold;
+mso-bidi-font-family:LMRoman10-Bold'>– </span></b><span style='font-size:10.0pt;
+font-family:LMRoman10-Regular;mso-bidi-font-family:LMRoman10-Regular'>Play/Stop<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><b><span style='font-size:10.0pt;font-family:LMRoman10-Bold;
+mso-bidi-font-family:LMRoman10-Bold'>– </span></b><span style='font-size:10.0pt;
+font-family:LMRoman10-Regular;mso-bidi-font-family:LMRoman10-Regular'>Record
+on/off<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><b><span style='font-size:10.0pt;font-family:LMRoman10-Bold;
+mso-bidi-font-family:LMRoman10-Bold'>– </span></b><span style='font-size:10.0pt;
+font-family:LMRoman10-Regular;mso-bidi-font-family:LMRoman10-Regular'>Toggle
+arrangement loop on/off<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><b><span style='font-size:10.0pt;font-family:LMRoman10-Bold;
+mso-bidi-font-family:LMRoman10-Bold'>– </span></b><span style='font-size:10.0pt;
+font-family:LMRoman10-Regular;mso-bidi-font-family:LMRoman10-Regular'>Toggle
+click on/off<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>• </span><b><span style='font-size:
+10.0pt;font-family:LMRoman10-Bold;mso-bidi-font-family:LMRoman10-Bold'>7th
+column buttons </span></b><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>(from top to bottom) - Clip/global
+control<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><b><span style='font-size:10.0pt;font-family:LMRoman10-Bold;
+mso-bidi-font-family:LMRoman10-Bold'>– </span></b><span style='font-size:10.0pt;
+font-family:LMRoman10-Regular;mso-bidi-font-family:LMRoman10-Regular'>Create a
+new 1 bar clip<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><b><span style='font-size:10.0pt;font-family:LMRoman10-Bold;
+mso-bidi-font-family:LMRoman10-Bold'>– </span></b><span style='font-size:10.0pt;
+font-family:LMRoman10-Regular;mso-bidi-font-family:LMRoman10-Regular'>Toggle
+overdub recording on/off <i>maybe?</i><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><b><s><span style='font-size:10.0pt;font-family:LMRoman10-Bold;
+mso-bidi-font-family:LMRoman10-Bold'>– </span></s></b><s><span
+style='font-size:10.0pt;font-family:LMRoman10-Regular;mso-bidi-font-family:
+LMRoman10-Regular'>Quantize<o:p></o:p></span></s></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><b><span style='font-size:10.0pt;font-family:LMRoman10-Bold;
+mso-bidi-font-family:LMRoman10-Bold'>– </span></b><span style='font-size:10.0pt;
+font-family:LMRoman10-Regular;mso-bidi-font-family:LMRoman10-Regular'>Undo<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><s><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>• </span></s><b><s><span
+style='font-size:10.0pt;font-family:LMRoman10-Bold;mso-bidi-font-family:LMRoman10-Bold'>Buttons
+in the <span class=SpellE>center</span> of the Shift-page<o:p></o:p></span></s></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><b><s><span style='font-size:10.0pt;font-family:LMRoman10-Bold;
+mso-bidi-font-family:LMRoman10-Bold'>– </span></s></b><s><span
+style='font-size:10.0pt;font-family:LMRoman10-Regular;mso-bidi-font-family:
+LMRoman10-Regular'>Select next / previous device with the two green buttons on
+the left.<o:p></o:p></span></s></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><b><s><span style='font-size:10.0pt;font-family:LMRoman10-Bold;
+mso-bidi-font-family:LMRoman10-Bold'>– </span></s></b><s><span
+style='font-size:10.0pt;font-family:LMRoman10-Regular;mso-bidi-font-family:
+LMRoman10-Regular'>Select next / previous device parameter bank with the two
+orange buttons on the left of the<o:p></o:p></span></s></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><s><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>Shift-page.<o:p></o:p></span></s></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><b><s><span style='font-size:10.0pt;font-family:LMRoman10-Bold;
+mso-bidi-font-family:LMRoman10-Bold'>– </span></s></b><s><span
+style='font-size:10.0pt;font-family:LMRoman10-Regular;mso-bidi-font-family:
+LMRoman10-Regular'>The two red buttons in the middle change the scale.<o:p></o:p></span></s></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><b><s><span style='font-size:10.0pt;font-family:LMRoman10-Bold;
+mso-bidi-font-family:LMRoman10-Bold'>– </span></s></b><s><span
+style='font-size:10.0pt;font-family:LMRoman10-Regular;mso-bidi-font-family:
+LMRoman10-Regular'>Toggle in-key/chromatic with pad below the scale selection
+pads).<o:p></o:p></span></s></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><s><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'><o:p><span style='text-decoration:none'>&nbsp;</span></o:p></span></s></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>• </span><span class=SpellE><span
+style='font-size:10.0pt;font-family:LMRoman10-Italic;mso-bidi-font-family:LMRoman10-Italic'>Shift+Cursor</span></span><span
+style='font-size:10.0pt;font-family:LMRoman10-Italic;mso-bidi-font-family:LMRoman10-Italic'>
+up </span><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>- Scrolls scene bank down (8 scenes)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>• </span><span class=SpellE><span
+style='font-size:10.0pt;font-family:LMRoman10-Italic;mso-bidi-font-family:LMRoman10-Italic'>Shift+Cursor</span></span><span
+style='font-size:10.0pt;font-family:LMRoman10-Italic;mso-bidi-font-family:LMRoman10-Italic'>
+down </span><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>- Scrolls scene bank up (8 scenes)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>• </span><span class=SpellE><span
+style='font-size:10.0pt;font-family:LMRoman10-Italic;mso-bidi-font-family:LMRoman10-Italic'>Shift+Cursor</span></span><span
+style='font-size:10.0pt;font-family:LMRoman10-Italic;mso-bidi-font-family:LMRoman10-Italic'>
+left </span><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>- Scrolls track bank down (8 tracks)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>• </span><span class=SpellE><span
+style='font-size:10.0pt;font-family:LMRoman10-Italic;mso-bidi-font-family:LMRoman10-Italic'>Shift+Cursor</span></span><span
+style='font-size:10.0pt;font-family:LMRoman10-Italic;mso-bidi-font-family:LMRoman10-Italic'>
+right </span><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>- Scrolls track bank up (8 tracks)<o:p></o:p></span></p>
+
+<b><span style='font-size:12.0pt;line-height:107%;font-family:LMRoman12-Bold;
+mso-fareast-font-family:Calibri;mso-fareast-theme-font:minor-latin;mso-bidi-font-family:
+LMRoman12-Bold;mso-ansi-language:EN-AU;mso-fareast-language:EN-US;mso-bidi-language:
+AR-SA'><br clear=all style='mso-special-character:line-break;page-break-before:
+always'>
+</span></b>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
+font-family:LMRoman12-Bold;mso-bidi-font-family:LMRoman12-Bold'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><b><span style='font-size:12.0pt;font-family:LMRoman12-Bold;
+mso-bidi-font-family:LMRoman12-Bold'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><b><span style='font-size:12.0pt;font-family:LMRoman12-Bold;
+mso-bidi-font-family:LMRoman12-Bold'>Browser Mode<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><i><span style='font-size:10.0pt;mso-bidi-font-family:
+Calibri;mso-bidi-theme-font:minor-latin'>Pressing <span class=SpellE>Shift+Device</span>
+displays a toast that toggles between “Device” and “Macro”, but other than
+that, seems to do nothing. May or may not work, have at it, find out.<o:p></o:p></span></i></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><i><span style='font-size:10.0pt;mso-bidi-font-family:
+Calibri;mso-bidi-theme-font:minor-latin'><o:p>&nbsp;</o:p></span></i></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><span style='font-size:10.0pt;mso-bidi-font-family:
+Calibri;mso-bidi-theme-font:minor-latin'>Press “<span class=SpellE>Shift+Device</span>”
+twice to enter the browser mode for <span class=SpellE>preset</span> selection.
+It will only enter the mode if a<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><span style='font-size:10.0pt;mso-bidi-font-family:
+Calibri;mso-bidi-theme-font:minor-latin'>device is currently selected.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>• The first 6 columns of the grid
+relate to the first 6 columns of the <span class=SpellE>preset</span> browser.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>• The 8th column (yellow) relates to
+the result (<span class=SpellE>preset</span>) column of the browser.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>• The 1st row moves the selection up by
+1.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>• The 2nd row moves the selection up by
+8.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>• The 3rd row moves the selection down
+by 8.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>• The 4th row moves the selection down
+by 1.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>• The red button dismisses the new <span
+class=SpellE>preset</span> selection and closes the browser.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>• The green button confirms the new <span
+class=SpellE>preset</span> selection and closes the browser.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>• The yellow buttons of the 1st row are
+for previewing <span class=SpellE>presets</span> of instrument devices.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><b><span style='font-size:12.0pt;font-family:LMRoman12-Bold;
+mso-bidi-font-family:LMRoman12-Bold'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><b><span style='font-size:12.0pt;font-family:LMRoman12-Bold;
+mso-bidi-font-family:LMRoman12-Bold'>Session Mode<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>• Press pad to start clip<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><b><span style='font-size:10.0pt;font-family:LMRoman10-Bold;
+mso-bidi-font-family:LMRoman10-Bold'>– </span></b><span style='font-size:10.0pt;
+font-family:LMRoman10-Regular;mso-bidi-font-family:LMRoman10-Regular'>As per
+clip: Present clip<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><b><span style='font-size:10.0pt;font-family:LMRoman10-Bold;
+mso-bidi-font-family:LMRoman10-Bold'>– </span></b><span style='font-size:10.0pt;
+font-family:LMRoman10-Regular;mso-bidi-font-family:LMRoman10-Regular'>Green:
+Playing clip<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><b><span style='font-size:10.0pt;font-family:LMRoman10-Bold;
+mso-bidi-font-family:LMRoman10-Bold'>– </span></b><span style='font-size:10.0pt;
+font-family:LMRoman10-Bold;mso-bidi-font-family:LMRoman10-Bold'>Low </span><span
+style='font-size:10.0pt;font-family:LMRoman10-Regular;mso-bidi-font-family:
+LMRoman10-Regular'>Green: Queued clip<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><b><span style='font-size:10.0pt;font-family:LMRoman10-Bold;
+mso-bidi-font-family:LMRoman10-Bold'>– </span></b><span style='font-size:10.0pt;
+font-family:LMRoman10-Regular;mso-bidi-font-family:LMRoman10-Regular'>Red:
+Recording clip<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><s><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>• Long press a pad in session mode to
+select the clip without starting it.<o:p></o:p></span></s></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><s><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'><o:p><span style='text-decoration:none'>&nbsp;</span></o:p></span></s></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>• </span><b><span style='font-size:
+10.0pt;font-family:LMRoman10-Bold;mso-bidi-font-family:LMRoman10-Bold'>Track
+buttons </span></b><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>- Clip stop, solo, rec arm, mute or
+select<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><b><span style='font-size:12.0pt;font-family:LMRoman12-Bold;
+mso-bidi-font-family:LMRoman12-Bold'>Play Mode<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>• </span><i><span style='font-size:
+10.0pt;font-family:LMRoman10-Italic;mso-bidi-font-family:LMRoman10-Italic'>Grid
+</span></i><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>- Play notes in the currently selected
+scale. White pads are the base notes.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><s><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>• </span></s><b><s><span
+style='font-size:10.0pt;font-family:LMRoman10-Bold;mso-bidi-font-family:LMRoman10-Bold'>Track
+buttons </span></s></b><s><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>- like in Session mode<o:p></o:p></span></s></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>• </span><span style='font-size:10.0pt;
+font-family:LMRoman10-Italic;mso-bidi-font-family:LMRoman10-Italic'>Volume
+&amp; Pan</span><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'> change the octave. Send &amp; Device buttons
+change the scale. <s>6th button toggles chromatic mode. 7th and 8th button
+change the octave.<o:p></o:p></s></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><b><s><span style='font-size:12.0pt;font-family:LMRoman12-Bold;
+mso-bidi-font-family:LMRoman12-Bold'>Drum Sequencer<o:p></o:p></span></s></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><s><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>• The drum sequencer works as described
+in the Ableton Push manual.<o:p></o:p></span></s></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><s><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>• </span></s><i><s><span
+style='font-size:10.0pt;font-family:LMRoman10-Italic;mso-bidi-font-family:LMRoman10-Italic'>Cursor
+up </span></s></i><s><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>- Move the note range up.<o:p></o:p></span></s></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><s><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>• </span></s><i><s><span
+style='font-size:10.0pt;font-family:LMRoman10-Italic;mso-bidi-font-family:LMRoman10-Italic'>Cursor
+down </span></s></i><s><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>- Move the note range down.<o:p></o:p></span></s></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><s><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>• </span></s><i><s><span
+style='font-size:10.0pt;font-family:LMRoman10-Italic;mso-bidi-font-family:LMRoman10-Italic'>Cursor
+left </span></s></i><s><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>- Decrease the edit page of the clip.<o:p></o:p></span></s></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><s><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>• </span></s><i><s><span
+style='font-size:10.0pt;font-family:LMRoman10-Italic;mso-bidi-font-family:LMRoman10-Italic'>Cursor
+right </span></s></i><s><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>- Increase the edit page of the clip.<o:p></o:p></span></s></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><s><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>• </span></s><i><s><span
+style='font-size:10.0pt;font-family:LMRoman10-Italic;mso-bidi-font-family:LMRoman10-Italic'>Scene
+Launch buttons </span></s></i><s><span style='font-size:10.0pt;font-family:
+LMRoman10-Regular;mso-bidi-font-family:LMRoman10-Regular'>- Select the note
+resolution (displayed on computer screen)<o:p></o:p></span></s></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><b><s><span style='font-size:12.0pt;font-family:LMRoman12-Bold;
+mso-bidi-font-family:LMRoman12-Bold'>Note Sequencer<o:p></o:p></span></s></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><s><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>• The pads display an 8x8 view of the
+selected clips note grid.<o:p></o:p></span></s></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><s><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>• The rows represent the notes of the
+selected scale.<o:p></o:p></span></s></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><s><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>• Note that you can scroll past the end
+of the clip (to the right).<o:p></o:p></span></s></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><s><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>• Press pads to enter/delete notes.<o:p></o:p></span></s></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><s><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>• Change note length or create long
+notes in the Sequencers (Note, Drum) by pressing a note pad and<o:p></o:p></span></s></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><s><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>then a pad right of it.<o:p></o:p></span></s></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><s><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>• Use the Scene buttons to change the
+grids resolution.<o:p></o:p></span></s></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><s><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>• </span></s><i><s><span
+style='font-size:10.0pt;font-family:LMRoman10-Italic;mso-bidi-font-family:LMRoman10-Italic'>Cursor
+up </span></s></i><s><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>- Move the note range up.<o:p></o:p></span></s></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><s><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>• </span></s><i><s><span
+style='font-size:10.0pt;font-family:LMRoman10-Italic;mso-bidi-font-family:LMRoman10-Italic'>Cursor
+down </span></s></i><s><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>- Move the note range down.<o:p></o:p></span></s></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><s><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>• </span></s><i><s><span
+style='font-size:10.0pt;font-family:LMRoman10-Italic;mso-bidi-font-family:LMRoman10-Italic'>Cursor
+left </span></s></i><s><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>- Decrease the edit page of the clip.<o:p></o:p></span></s></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><s><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>• </span></s><i><s><span
+style='font-size:10.0pt;font-family:LMRoman10-Italic;mso-bidi-font-family:LMRoman10-Italic'>Cursor
+right </span></s></i><s><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>- Increase the edit page of the clip.<o:p></o:p></span></s></p>
+
+<span style='font-size:10.0pt;line-height:107%;font-family:LMRoman10-Regular;
+mso-fareast-font-family:Calibri;mso-fareast-theme-font:minor-latin;mso-bidi-font-family:
+LMRoman10-Regular;mso-ansi-language:EN-AU;mso-fareast-language:EN-US;
+mso-bidi-language:AR-SA'><br clear=all style='mso-special-character:line-break;
+page-break-before:always'>
+</span>
+
+<p class=MsoNormal><span style='font-size:10.0pt;line-height:107%;font-family:
+LMRoman10-Regular;mso-bidi-font-family:LMRoman10-Regular'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><b><s><span style='font-size:12.0pt;font-family:LMRoman12-Bold;
+mso-bidi-font-family:LMRoman12-Bold'>Raindrop sequencer<o:p></o:p></span></s></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><s><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>• The lowest row displays the playable
+notes<o:p></o:p></span></s></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><s><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>• The row above a note starts a
+raindrop<o:p></o:p></span></s></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><s><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>• If the raindrop reaches the <span
+class=GramE>note</span> it sounds<o:p></o:p></span></s></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><s><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>• </span></s><i><s><span
+style='font-size:10.0pt;font-family:LMRoman10-Italic;mso-bidi-font-family:LMRoman10-Italic'>Cursor
+up </span></s></i><s><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>- Move the note range up.<o:p></o:p></span></s></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><s><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>• </span></s><i><s><span
+style='font-size:10.0pt;font-family:LMRoman10-Italic;mso-bidi-font-family:LMRoman10-Italic'>Cursor
+down </span></s></i><s><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>- Move the note range down.<o:p></o:p></span></s></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><s><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>• </span></s><i><s><span
+style='font-size:10.0pt;font-family:LMRoman10-Italic;mso-bidi-font-family:LMRoman10-Italic'>Cursor
+left </span></s></i><s><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>- No function.<o:p></o:p></span></s></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><s><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>• </span></s><i><s><span
+style='font-size:10.0pt;font-family:LMRoman10-Italic;mso-bidi-font-family:LMRoman10-Italic'>Cursor
+right </span></s></i><s><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>- No function.<o:p></o:p></span></s></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><b><s><span style='font-size:12.0pt;font-family:LMRoman12-Bold;
+mso-bidi-font-family:LMRoman12-Bold'>Preferences dialog<o:p></o:p></span></s></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><s><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>You can set several preferences which
+are stored when you exit the DAW. These are global settings and <span
+class=GramE>not</span><o:p></o:p></span></s></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><s><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>specific to projects.<o:p></o:p></span></s></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><b><s><span style='font-size:10.0pt;font-family:LMRoman10-Bold;
+mso-bidi-font-family:LMRoman10-Bold'>Play and Sequence<o:p></o:p></span></s></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><s><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>• Quantize Amount: The amount of
+quantization to use when <span class=GramE>Quantize</span> is executed. 100%
+aligned <span class=GramE>all</span><o:p></o:p></span></s></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><s><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>notes fully to the grid.<o:p></o:p></span></s></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><s><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>• Default note view: The view that
+should be the default when you select an instrument track for the<o:p></o:p></span></s></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><s><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>first time (e.g. Play, Drum, Sequencer,
+<span class=GramE>. . . )</span>.<o:p></o:p></span></s></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><s><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>• Start with session view: Enables the
+session view on startup if active otherwise the default note view is<o:p></o:p></span></s></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><s><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>displayed.<o:p></o:p></span></s></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><b><s><span style='font-size:10.0pt;font-family:LMRoman10-Bold;
+mso-bidi-font-family:LMRoman10-Bold'>Workflow<o:p></o:p></span></s></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><s><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>• Exclude deactivated items: If active,
+deactivated items like tracks will not be displayed on the controller.<o:p></o:p></span></s></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><s><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'><o:p><span style='text-decoration:none'>&nbsp;</span></o:p></span></s></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><s><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>This cleans up the displayed banks but
+also prevents the options to activate <span class=GramE>an</span> deactivated
+item from<o:p></o:p></span></s></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><s><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>the controller.<o:p></o:p></span></s></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><s><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>• New clip length: The length of a clip
+created with the <span class=GramE>New</span> function.<o:p></o:p></span></s></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><b><s><span style='font-size:10.0pt;font-family:LMRoman10-Bold;
+mso-bidi-font-family:LMRoman10-Bold'><o:p><span style='text-decoration:none'>&nbsp;</span></o:p></span></s></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><b><s><span style='font-size:10.0pt;font-family:LMRoman10-Bold;
+mso-bidi-font-family:LMRoman10-Bold'>Transport<o:p></o:p></span></s></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><s><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>• Behaviour on Pause: Sets the action
+to be executed when playback is stopped with the Play button<o:p></o:p></span></s></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><b><s><span style='font-size:10.0pt;font-family:LMRoman10-Bold;
+mso-bidi-font-family:LMRoman10-Bold'><o:p><span style='text-decoration:none'>&nbsp;</span></o:p></span></s></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><b><s><span style='font-size:10.0pt;font-family:LMRoman10-Bold;
+mso-bidi-font-family:LMRoman10-Bold'>Session<o:p></o:p></span></s></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><s><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>• Select clip/scene on launch: If a
+clip/scene is started from the controller and this setting is off the<o:p></o:p></span></s></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><s><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>clip/scene will not be selected. Use if
+you edit another clip and want not to change the focus.<o:p></o:p></span></s></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><b><span style='font-size:10.0pt;font-family:LMRoman10-Bold;
+mso-bidi-font-family:LMRoman10-Bold'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><b><span style='font-size:10.0pt;font-family:LMRoman10-Bold;
+mso-bidi-font-family:LMRoman10-Bold'>Button Control<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>• Fader Ctrl: Select the function of
+the faders<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>• Soft keys: Select the function of the
+vertical buttons<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><b><span style='font-size:12.0pt;font-family:LMRoman12-Bold;
+mso-bidi-font-family:LMRoman12-Bold'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><b><span style='font-size:12.0pt;font-family:LMRoman12-Bold;
+mso-bidi-font-family:LMRoman12-Bold'>Document Settings<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>These settings are specific to each
+project.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><b><span style='font-size:10.0pt;font-family:LMRoman10-Bold;
+mso-bidi-font-family:LMRoman10-Bold'>Scales<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>• Scale: Select the scale<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>• Base: Select the base note of the
+scale<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><s><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>• In Key: Select </span></s><i><s><span
+style='font-size:10.0pt;font-family:LMRoman10-Italic;mso-bidi-font-family:LMRoman10-Italic'>Chromatic
+</span></s></i><s><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>to also display notes which are not
+part of the scale.<o:p></o:p></span></s></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;mso-layout-grid-align:
+none;text-autospace:none'><s><span style='font-size:10.0pt;font-family:LMRoman10-Regular;
+mso-bidi-font-family:LMRoman10-Regular'>• Layout: Select the layout of the
+scale for the Play mode. The numbers are the offsets between the <span
+class=GramE>rows</span><o:p></o:p></span></s></p>
+
+<p class=MsoNormal><s><span style='font-size:10.0pt;line-height:107%;
+font-family:LMRoman10-Regular;mso-bidi-font-family:LMRoman10-Regular'>of the
+grid. The arrows depict the direction from lower to higher <span class=GramE>notes:</span>
+left to right or bottom to top.</span><o:p></o:p></s></p>
+
+</div>
+
+</body>
+
 </html>
