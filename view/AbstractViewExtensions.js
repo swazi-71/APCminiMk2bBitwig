@@ -297,7 +297,7 @@ AbstractView.prototype.drawShiftGrid = function ()
     
     this.surface.pads.light (62, APC_COLOR_YELLOW);
     this.surface.pads.light (54, transport.isLauncherOverdub ? APC_COLOR_RED_BLINK : APC_COLOR_RED);
-    this.surface.pads.light (46, APC_COLOR_YELLOW);
+    //this.surface.pads.light (46, APC_COLOR_YELLOW);
     this.surface.pads.light (38, APC_COLOR_YELLOW);
 
     // Draw the track states on the scene buttons
@@ -364,9 +364,9 @@ AbstractView.prototype.onShiftGridNote = function (note, velocity)
         case 54:
             this.model.getTransport ().toggleLauncherOverdub ();
             break;
-        case 46:
+        /*case 46:
             this.model.getApplication ().quantize ();
-            break;
+            break;*/
         case 38:
             this.model.getApplication ().undo ();
             break;
